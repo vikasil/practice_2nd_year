@@ -2,7 +2,7 @@ services:
   auth_service:
     build:
       context: ./auth
-      dockerfile: Dockerfile  # Теперь используем внешний файл вместо inline
+      dockerfile: Dockerfile
     ports:
       - "8000:8000"
     volumes:
@@ -14,7 +14,7 @@ services:
   users_service:
     build:
       context: ./users
-      dockerfile: Dockerfile  # Теперь используем внешний файл вместо inline
+      dockerfile: Dockerfile
     ports:
       - "8001:8001"
     volumes:
